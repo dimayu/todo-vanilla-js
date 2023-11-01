@@ -18,6 +18,39 @@ const addTodo = (title) => {
         todoList.push(todo);
         localStorage.setItem("todos", JSON.stringify(todoList));
     }
+
+    return todo;
 }
 
-export {todoList, addTodo};
+const removeTodo = (id) => {
+    if (todoList) {
+        todoList = JSON.parse(localStorage.todos).filter((item) => {
+            return id !== item.id;
+        });
+        localStorage.setItem("todos", JSON.stringify(todoList));
+    }
+}
+
+const editTodo = (id, title) => {
+    if (todoList) {
+        todoList = JSON.parse(localStorage.todos).map((item) => {
+            return item.id === id
+                ? {...item, title: title}
+                : {...item, title: item.title}
+        });
+        localStorage.setItem("todos", JSON.stringify(todoList));
+    }
+}
+
+const doneTodo = (id) => {
+    if (todoList) {
+        todoList = JSON.parse(localStorage.todos).map((item) => {
+            return item.id === id
+                ? {...item, isDone: !item.isDone}
+                : {...item, isDone: false}
+        });
+        localStorage.setItem("todos", JSON.stringify(todoList));
+    }
+}
+
+export {todoList, addTodo, removeTodo, editTodo, doneTodo};

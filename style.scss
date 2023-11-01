@@ -27,3 +27,9 @@ body {
     background-color: $light---neutral--600;
   }
 }
+
+.input {
+  padding: 4px 8px;
+  border: 1px solid $light---primary--800;
+  border-radius: 12px;
+}

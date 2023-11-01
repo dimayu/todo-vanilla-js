@@ -1,3 +1,5 @@
+@import "styles/variables";
+
 .list {
   display: flex;
   gap: 12px;
@@ -8,8 +10,6 @@
 
   &__item {
     width: 50%;
-    display: flex;
-    justify-content: space-between;
     padding: 24px 32px;
     font-size: 24px;
     border-radius: 24px;
@@ -17,6 +17,36 @@
 
     &__btns {
       display: flex;
+    }
+
+    &--default {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--edit {
+      display: none;
+    }
+
+    &.is-edit {
+      .list__item--edit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .list__item--default {
+        display: none;
+      }
+    }
+
+    &.is-done {
+      box-shadow: 0 8px 10px 0 rgba(0, 82, 57, 0.15);
+
+      .list__item--default {
+        text-decoration: line-through;
+        color: $light---primary--100;
+      }
     }
   }
 }

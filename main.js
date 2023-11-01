@@ -10,7 +10,6 @@ const render = () => {
         ${header()}
         ${formAddTodo()}
         <ul class="list">
-            ${todoList()}
         </ul>
       </div>
     `;

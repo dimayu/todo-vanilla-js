@@ -1,4 +1,5 @@
 import todoList from "../todoList/todoList.js";
+import { initListItemControls } from "../../controls/listControls.js";
 import { addTodo } from "../../methods/methods.js";
 
 import './formAddTodo.scss';
@@ -7,12 +8,13 @@ import './formAddTodo.scss';
 window.addEventListener("DOMContentLoaded", () => {
        const btnAdd = document.querySelector(".form__btn");
        const title = document.querySelector(".form__input");
-       const list = document.querySelector(".list");
 
        btnAdd.addEventListener("click", (e) => {
-              addTodo(title.value);
-              list.innerHTML = todoList();
+              const newItem = addTodo(title.value);
+              todoList();
               title.value = "";
+              const newItemElement = document.querySelector(`[data-item-id="${newItem.id}"]`);
+              initListItemControls(newItemElement);
        });
 
        title.addEventListener("input", () => {
@@ -27,8 +29,8 @@ window.addEventListener("DOMContentLoaded", () => {
 const formAddTodo = () => {
        return (`
            <div class="form">
-                <input type="text" name="title" class="form__input">
-                <button class="btn" disabled>add</button>
+                <input type="text" name="title" class="input form__input">
+                <button class="btn form__btn" disabled>add</button>
            </div>
        `)
 }
