@@ -1,0 +1,81 @@
+/* Color styles */
+$light---neutral--100: rgba(255, 255, 255, 1);
+$light---neutral--200: rgba(246, 249, 249, 1);
+$light---neutral--300: rgba(237, 243, 241, 1);
+$light---neutral--400: rgba(225, 234, 232, 1);
+$light---neutral--500: rgba(146, 160, 158, 1);
+$light---neutral--600: rgba(114, 131, 128, 1);
+$light---neutral--700: rgba(59, 83, 79, 1);
+$light---neutral--800: rgba(40, 57, 54, 1);
+$light---neutral--900: rgba(21, 30, 28, 1);
+$light---neutral--1000: rgba(46, 46, 46, 1);
+$light---primary--50: rgba(223, 242, 238, 1);
+$light---primary--100: rgba(192, 235, 226, 1);
+$light---primary--200: rgba(161, 226, 213, 1);
+$light---primary--300: rgba(99, 197, 178, 1);
+$light---primary--400: rgba(43, 177, 150, 1);
+$light---primary--500: rgba(13, 142, 117, 1);
+$light---primary--600: rgba(16, 129, 106, 1);
+$light---primary--700: rgba(9, 103, 85, 1);
+$light---primary--800: rgba(3, 68, 55, 1);
+$light---primary--900: rgba(5, 44, 35, 1);
+$light---secondary--50: rgba(222, 233, 235, 1);
+$light---secondary--100: rgba(196, 212, 214, 1);
+$light---secondary--200: rgba(170, 191, 192, 1);
+$light---secondary--300: rgba(157, 181, 182, 1);
+$light---secondary--400: rgba(137, 165, 166, 1);
+$light---secondary--500: rgba(117, 149, 149, 1);
+$light---secondary--600: rgba(104, 132, 132, 1);
+$light---secondary--700: rgba(91, 115, 115, 1);
+$light---secondary--800: rgba(78, 98, 98, 1);
+$light---secondary--900: rgba(64, 81, 81, 1);
+$light---opacity--6: rgba(255, 255, 255, 0.06);
+$light---opacity--10: rgba(255, 255, 255, 0.1);
+$light---opacity--40: rgba(4, 30, 22, 0.4);
+$alerts---error--300: rgba(231, 128, 123, 1);
+$alerts---error--500: rgba(212, 34, 34, 1);
+$alerts---error--700: rgba(184, 29, 29, 1);
+$alerts---error--100: rgba(250, 222, 212, 1);
+$alerts---warning--100: rgba(255, 242, 217, 1);
+$alerts---warning--300: rgba(241, 198, 114, 1);
+$alerts---warning--500: rgba(229, 163, 32, 1);
+$alerts---warning--700: rgba(204, 145, 28, 1);
+$alerts---success--100: rgba(244, 250, 212, 1);
+$alerts---success--300: rgba(195, 215, 133, 1);
+$alerts---success--500: rgba(131, 170, 29, 1);
+$alerts---success--700: rgba(104, 135, 23, 1);
+$accent-1--100: rgba(217, 238, 240, 1);
+$accent-1--300: rgba(141, 189, 194, 1);
+$accent-1--500: rgba(56, 130, 137, 1);
+$accent-1--700: rgba(33, 94, 100, 1);
+$accent-2--700: rgba(97, 81, 158, 1);
+$accent-2--500: rgba(140, 120, 212, 1);
+$accent-2--300: rgba(206, 197, 240, 1);
+$accent-2--100: rgba(233, 231, 241, 1);
+$accent-3--700: rgba(237, 90, 37, 1);
+$accent-3--500: rgba(250, 114, 65, 1);
+$accent-3--300: rgba(254, 166, 134, 1);
+$accent-3--100: rgba(255, 214, 200, 1);
+$accent-4--700: rgba(208, 35, 90, 1);
+$accent-4--500: rgba(236, 73, 125, 1);
+$accent-4--300: rgba(254, 161, 190, 1);
+$accent-4--100: rgba(255, 225, 234, 1);
+$light-gradient-bg: linear-gradient(270deg, #062b22 0%, #0d4e3f 100%);
+
+/* Text-size styles */
+$h1: 64px;
+$h2: 40px;
+$h3: 32px;
+$h4: 20px;
+$h5-mobile: 28px;
+$t1_bold: 16px;
+$t1: 16px;
+$t2: 14px;
+$t3: 12px;
+$b1: 14px;
+
+/* Fonts */
+$font-family: Inter, sans-serif;
+
+/* Effect styles */
+$cards_shadow: 0 8px 50px rgba(0, 82, 57, 0.15);
